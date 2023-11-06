@@ -8,69 +8,105 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  width: 100%;
-  height: 10vh;
+div .conteudo {
   background-color: #545454;
-  display: flex;
-}
-.navbar .logo {
-  width: 10%;
-}
-.navbar .logo .imagem-logo {
-  width: 100%;
-  transform: translate(0, -45px);
-}
-.navbar .logo button {
-  height: 10vh;
-  background-color: transparent;
-  border-color: transparent;
-}
-.navbar nav {
-  width: 70%;
-  transform: translate(160px);
-  padding-top: 3vh;
-}
-.navbar nav a.link {
-  font-size: 20px;
-  padding-left: 40px;
-  transform: translate(0, 20px);
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  color: white;
-}
-.navbar nav .link:hover {
-  text-decoration: underline;
-  transition: 0.3s;
-}
-.navbar nav .seletor {
-  width: 12%;
-  height: 4vh;
-  border-radius: 7px;
-  border-style: solid;
-  transform: translate(40px);
-}
-.navbar nav .seletor:hover {
-  background-color: #545454;
-  color: white;
-  border-color: white;
-}
-.navbar .conteudo {
-  width: 100%;
-  height: 100vh;
-  background-color: #a8a39d;
-}
-
-.main-conteudo {
   width: 100%;
   height: 100vh;
   position: fixed;
-  background-color: #a8a39d;
-  display: inline-flex;
+}
+div .conteudo .imagem {
+  width: 30%;
+  height: 20vh;
+  background-color: transparent;
+  margin: 2% 34%;
+}
+div .conteudo .imagem .img-logo {
+  width: 80%;
+  transform: translate(50px, -100px);
+}
+div .conteudo .formulario form {
+  width: 35%;
+  height: 50vh;
+  background-color: #E2E2E2;
+  transform: translate(485px, 40px);
+  border-radius: 4vh;
+  border-style: solid;
+  border-color: gray;
+}
+div .conteudo .formulario form .u-usuario .icone-usuario {
+  width: 8%;
+  transform: translate(170px, 40px);
+}
+div .conteudo .formulario form .u-usuario label[for=usuario] {
+  font-size: 30px;
+  margin: 43%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div .conteudo .formulario form .u-usuario input[type=text] {
+  width: 75%;
+  height: 4vh;
+  margin: 3% 12%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 20px;
+}
+div .conteudo .formulario form .u-usuario input[type=text]:hover {
+  background-color: #cccccc;
+  transition: 0.5s;
+}
+div .conteudo .formulario form .u-senha .icone-senha {
+  width: 8%;
+  margin-left: 32%;
+  transform: translate(0, 7px);
+}
+div .conteudo .formulario form .u-senha label[for=senha] {
+  font-size: 30px;
+  margin-left: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div .conteudo .formulario form .u-senha input[type=password] {
+  width: 75%;
+  height: 4vh;
+  margin: 3% 12%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  padding-left: 20px;
+}
+div .conteudo .formulario form .u-senha input[type=password]:hover {
+  background-color: #cccccc;
+  transition: 0.5s;
+}
+div .conteudo .formulario form .div-submit input[type=submit] {
+  width: 25%;
+  height: 4vh;
+  margin: 2% 36%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  background-color: white;
+  font-size: 16px;
+}
+div .conteudo .formulario form .div-submit input[type=submit]:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 4px black;
+  background-color: #cccccc;
+}
+div .conteudo .formulario form .div-submit input[type=submit]:hover a {
+  color: black;
 }
 
-h1 {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  transform: translate(500px, 70px);
+@media screen and (max-width: 1440px) {
+  .formulario {
+    transform: translate(-30px, 0);
+  }
+}
+@media screen and (max-width: 1360px) {
+  .formulario {
+    transform: translate(-50px, 0);
+  }
+  .formulario .u-usuario .icone-usuario {
+    margin: 0 -15px;
+  }
 }/*# sourceMappingURL=index.css.map */
